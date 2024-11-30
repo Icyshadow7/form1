@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+backdrop-filter: blur(7px);
+background-image: url('pseudo.jpg');
+background-position: center;
+height: 96vh;
+background-size: cover;
+        }
+
+
+        .container {
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 140px;
+           border: 1px white solid;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 8px 8px 8px -4px rgb(0, 0, 0);
+        }
+        .username input {
+            font-family: "Merienda", cursive;
+            margin: 20px;
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            padding-left: 20px;
+            background-color: transparent;
+            border: 1px black
+             solid;
+            color: black;
+
+        }
+
+        .password input {
+      font-family: "Merienda", cursive;
+            margin: 20px;
+            width: 200px;
+            height: 40px;
+            border: 1px black solid;
+            border-radius: 20px;
+            padding-left: 20px;
+            background-color: transparent;
+            color: white;
+            
+        }
+        .username input::placeholder{
+            color: rgb(182, 184, 182);
+           font-size: 13px;
+            padding-left: 9px;
+        }
+        .password input::placeholder{
+            color: rgb(182, 184, 182);
+            font-size: 12px;
+            padding-left: 10px;
+        }
+       
+
+        .btn {
+            margin: 20px;
+        }
+
+        .btn .login {
+            padding: 10px;
+            color: rgb(170, 172, 170);
+            height: 30%;
+            width: 100%;
+            border: 1px rgb(51, 51, 51) solid;
+            border-radius: 20px;
+         transition:all 1.5s;
+            background-color: transparent;
+          font-family: "Ga Maamli", sans-serif;
+          animation: glow 1s alternate linear infinite ;
+          font-size: 20px;
+           
+        }
+        .btn .login:hover{
+           
+          background-color: rgb(97, 97, 97);
+        }
+        @keyframes glow{
+0%{
+    text-shadow: 0 0 10px rgb(255, 255, 255),0 0 20px rgb(255, 255, 255),0 0 30px rgb(255, 255, 255),0 0 40px rgb(255, 255, 255),0 0 50px rgb(255, 255, 255);
+}
+
+        }
+        .last{
+            align-items: center;
+           
+            text-align: center;
+            padding-left: 14px;
+            padding-bottom: 10px;
+       
+        }
+        .last p{
+            color: rgb(182, 184, 182);
+        }
+        .last a{
+            text-decoration: 
+            none;
+            color: rgb(182, 184, 182);
+        }
+        .last a:hover{
+            color: rgb(41, 226, 87);
+        }
+
+    </style>
+
+<body>
+    <div class="container">
+        <div class="username">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="password">
+            <input type="password" placeholder="Enter your password">
+
+        </div>
+        
+        <div class="btn">
+            <button type="button" class="login">Login</button>
+           
+        </div>
+        <div class="last">
+            <p>Don't have account? <a href="#">Sign in </a></p>
+        </div>
+    </div>
+</body>
+
+</html>
